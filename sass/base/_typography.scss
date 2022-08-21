@@ -67,3 +67,16 @@ body {
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
 }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
