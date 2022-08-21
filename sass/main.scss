@@ -1,15 +1,17 @@
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
 
-@import 'components/button';
+@import "components/button";
+@import 'components/composition';
+
 @import 'layout/header';
-@import 'layout/grid';
+@import "layout/grid";
 
 @import "pages/home";
 
@@ -21,6 +23,3 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-
-
-
