@@ -1,11 +1,11 @@
 .card {
   position: relative;
-  height: 50rem;
+  height: 52rem;
   perspective: 150rem;
   -moz-perspective: 150rem;
 
   &__side {
-    height: 50rem;
+    height: 52rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -116,6 +116,26 @@
         rgba($color-secondary-light, 0.85),
         rgba($color-secondary-dark, 0.85)
       );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
     }
   }
 }
