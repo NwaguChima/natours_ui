@@ -22,6 +22,7 @@
     height: 15rem;
     background-color: orange;
     float: left;
+    position: relative;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
@@ -43,5 +44,16 @@
     -moz-transform: skewX(12deg);
     -ms-transform: skewX(12deg);
     -o-transform: skewX(12deg);
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
   }
 }
