@@ -29,12 +29,6 @@
 
 */
 
-@mixin respond-phone {
-  @media (max-width: 600px) {
-    @content;
-  }
-}
-
 /* 
 $breakpoint argument choices:
 - phone
@@ -42,28 +36,26 @@ $breakpoint argument choices:
 - tab-land
 - big-desktop
 */
+
 @mixin respond($breakpoint) {
-  @if $breakpoint == "phone" {
-    @media (max-width: 60rem) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
       @content;
-    }
+    } //600px
   }
-
-  @if $breakpoint == "tab-port" {
-    @media (max-width: 90rem) {
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
       @content;
-    }
+    } //900px
   }
-
-  @if $breakpoint == "tab-land" {
-    @media (max-width: 120rem) {
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
       @content;
-    }
+    } //1200px
   }
-
-  @if $breakpoint == "big-desktop" {
-    @media (max-width: 180rem) {
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
       @content;
-    }
+    } //1800
   }
 }
