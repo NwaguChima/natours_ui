@@ -24,8 +24,8 @@
     -ms-transition: all 0.8s ease;
     -o-transition: all 0.8s ease;
 
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 
     &--front {
       background-color: $color-white;

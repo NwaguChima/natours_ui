@@ -4,9 +4,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba($color-black, 0.8);
   z-index: 99999;
-
+  background-color: rgba($color-black, 0.8);
   opacity: 0;
   visibility: hidden;
 
@@ -15,6 +14,11 @@
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
+
+  @supports (backdrop-filter: blur(10px)) {
+    background-color: rgba($color-black, 0.3);
+    backdrop-filter: blur(10px);
+  }
 
   &__content {
     @include position-absolute;
