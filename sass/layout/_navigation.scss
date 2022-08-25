@@ -27,7 +27,6 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
@@ -36,11 +35,17 @@
       $color-primary-dark
     );
     z-index: 1000;
+
+    transform: scale(100);
+    -webkit-transform: scale(100);
+    -moz-transform: scale(100);
+    -ms-transform: scale(100);
+    -o-transform: scale(100);
   }
 
   &__nav {
     height: 100vh;
-    width: 100100%;
+    width: 100%;
     position: fixed;
     top: 0;
     right: 0;
@@ -48,6 +53,9 @@
   }
 
   &__list {
+    @include position-absolute;
+    list-style: none;
+    text-align: center;
   }
 
   &__item {
