@@ -7,6 +7,20 @@
   background-color: rgba($color-black, 0.8);
   z-index: 99999;
 
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
   &__content {
     @include position-absolute;
     width: 75%;
