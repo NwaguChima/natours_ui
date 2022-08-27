@@ -1,3 +1,4 @@
+// MAIN FILE WHERE ALL OTHER SASS FILES ARE IMPORTED
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
@@ -9,14 +10,14 @@
 
 @import "components/button";
 @import "components/card";
-@import 'components/composition';
-@import 'components/feature-box';
-@import 'components/story';
-@import 'components/bg-video';
-@import 'components/form';
-@import 'components/popup';
+@import "components/composition";
+@import "components/feature-box";
+@import "components/story";
+@import "components/bg-video";
+@import "components/form";
+@import "components/popup";
 
-@import 'layout/header';
+@import "layout/header";
 @import "layout/grid";
 @import "layout/footer";
 @import "layout/navigation";
